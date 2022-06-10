@@ -57,3 +57,4 @@ int main(){
 		printf("%d ",p[i]);
 	return 0;
 }
+//T (n) = 2T (n/2) + θ (n)

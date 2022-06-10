@@ -46,7 +46,7 @@ void printGraphColors(){
       printf("Node %d is %s\n",u,defaultColorList[color[u]]);
 }
 
-main() {
+/*main() {
    int i,j;
    printf("Enter the number of nodes: ");
    scanf("%d",&NODE);
@@ -54,6 +54,22 @@ main() {
    for(i=0;i<NODE;i++){
       for(j=0;j<NODE;j++)
          scanf("%d",&graph[i][j]);
+   }
+   graphColoring();
+   printGraphColors();
+}*/
+int main(){
+   int i,j,e,a,b,N=100;
+   for(i=0;i<N;i++)for(j=0;j<N;j++)graph[i][j]=0;
+
+   printf("Enter the number of Nodes: ");
+   scanf("%d",&NODE);
+   printf("Enter the number of Edges: ");
+   scanf("%d",&e);
+   printf("Enter the Edges:\n");
+   for(i=0;i<e;i++){
+      scanf("%d%d",&a,&b);
+      graph[a][b]=graph[b][a]=1;
    }
    graphColoring();
    printGraphColors();
