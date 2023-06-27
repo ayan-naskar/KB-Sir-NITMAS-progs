@@ -43,7 +43,7 @@ void initialize(struct g *obj,int size,int * mat,int src){
 		obj[i].c=j=0;
 		while(s>0){
 			if(s&1){
-				obj[i].c++
+				obj[i].c++;
 				pos=j;
 			}
 			j++;
